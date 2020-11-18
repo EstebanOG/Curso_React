@@ -5,7 +5,6 @@ import './style.css';
 
 function Product({
     onDelete,
-    id,
     img,
     producto,
     precio,
@@ -30,7 +29,6 @@ function Product({
 Product.defaultProp={
     
     onDelete: function () {},
-    id: 0,
     img: '',
     producto: '',
     precio: '',
@@ -40,10 +38,9 @@ Product.defaultProp={
 Product.propTypes = {
     
     onDelete: PropTypes.func,
-    id: PropTypes.number.isRequired,
     img: PropTypes.string,
-    producto: PropTypes.string.isRequired,
-    precio: PropTypes.string.isRequired,
+    producto: PropTypes.string,
+    precio: PropTypes.string,
     
 };
 

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import products from '../../Data/data.json';
+//import products from '../../Data/data.json';
+import { getProducts,
+  addProduct,
+  deleteProducts, } from '../../Utils/HTTPClient';
 
 import './style.css';
 
@@ -26,7 +29,7 @@ class Store extends Component {
   
       this.state = {
         addNewProduct: false,
-        products,
+        products:[],
       };
   
       this.handleShowForm = ev =>
@@ -34,19 +37,30 @@ class Store extends Component {
   
       this.hanldeAddP = this.hanldeAddP.bind(this);
     }
-  
+    
+    // Esta función será llamada Cuando el componente ya se ha montado
+    componentDidMount() {
+      //console.log('El componente se ha montado');
+      // Cuando se resuelva la promesa haga ésto
+      getProducts().then(data => this.setState({ products: data }));
+    }
+
     handleDelete(id) {
-      this.setState({
-        products: this.state.products.filter(poduct => poduct.id !== id),
-      });
+      // this.state.addNewProduct = false
+      deleteProducts(id).then(data =>
+        this.setState({
+          products: this.state.products.filter(poduct => poduct.id !== id),
+        })
+      );
     }
   
     hanldeAddP(newProduct) {
-      newProduct.id = this.state.products.length + 1;
-      this.setState({
-        addNewProduct: false,
-        products: this.state.products.concat([newProduct]),
-      });
+      addProduct(newProduct).then(data =>
+        this.setState({
+          addNewProduct: false,
+          products: [...this.state.products, data],
+        })
+      );
     }
   
     render() {
@@ -65,6 +79,9 @@ class Store extends Component {
               <button className="add-button" onClick={this.handleShowForm}>
                 Agregar Nuevo Producto
               </button>
+              {products.length === 0 ? (
+              <p>Cargando...</p>
+              ) : (
               <div className="grid-container">
                 {products.map(item => (
                   <Product
@@ -74,6 +91,7 @@ class Store extends Component {
                   />
                 ))}
               </div>
+              )}
             </>
           )}
         </>

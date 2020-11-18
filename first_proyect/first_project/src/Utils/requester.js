@@ -1,18 +1,42 @@
-// Data, styles, files
-import products from 'Data/products.json';
+//const URL = 'https://faker-products.herokuapp.com/'; // PRODUCCCIÓN
+const URL = 'http://localhost:3000/'; // PRUBAS DE DESAROLLO
 
-export function getData() {
-  return products;
+export function send(request) {
+  return fetch(request.url, {
+    method: request.method,
+    headers: request.headers,
+    body: JSON.stringify(request.data),
+  }).then(response => response.json());
 }
 
-export function addData(obj) {
-  // Lógica de agregar un registro
+export function get(endpoint) {
+  return send({
+    url: `${URL}${endpoint}`,
+    method: 'GET',
+  });
 }
 
-export function updateData(id, obj) {
-  // Lógica de actualizar el registro
+export function post(endpoint, data) {
+  return send({
+    url: `${URL}${endpoint}`,
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    data,
+  });
 }
 
-export function deleteData(id) {
-  // Lógica de eliminar el registro
+export function put(endpoint, data) {
+  return send({
+    url: `${URL}${endpoint}`,
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    data,
+  });
+}
+
+export function del(endpoint) {
+  return send({
+    url: `${URL}${endpoint}`,
+    method: 'DELETE',
+  });
 }
