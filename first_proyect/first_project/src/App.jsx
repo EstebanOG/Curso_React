@@ -1,16 +1,17 @@
 import React from 'react';
 
-import Encabezado from './Componentes/Encabezado';
-import Producto from './Componentes/Producto';
-import datos from './data.json';
+import './style.css';
+import Header from './Components/Header/index';
+import Store from './Components/Store/index';
+import products from './Data/data.json';
 
 function App() {
   return (
     <div className = "contenedor">
-      <Encabezado />
-      <Producto items={datos}/>
+      <Header/>
+      <Store title ="Tienda saludable"/>
     </div>
   );
 }
-
+//<Store data={products}/>
 export default App;

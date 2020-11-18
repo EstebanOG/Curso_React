@@ -1,0 +1,26 @@
+.card{
+    text-align: center;
+    height: 450px;
+    box-shadow: 0 0 2px #000c;
+    margin-top: 30px;
+}
+
+.card h4{
+  font-size: 25px;
+  color: #85ab8e;
+}
+
+.card img{
+  margin-top: 10px;
+  width: 250px;
+  height: 270px;
+}
+
+.delete-button {
+  float: right;
+  background: hsl(0, 75%, 50%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}

@@ -1,33 +1,3 @@
 .contenedor{
   margin: 30px 50px 75px 50px;
 }
-
-.encabezado{
-  margin: 5px 5px 0px 5px;
-  border-bottom-style: solid;
-  border-bottom-color: black;
-  border-bottom-width: 1px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 30px;
-}
-
-.carta{
-  text-align: center;
-  box-shadow: 0 0 2px #000c;
-  margin-top: 30px;
-}
-
-.carta h4{
-  font-size: 25px;
-  color: #85ab8e;
-}
-
-.carta img{
-  margin-top: 10px;
-  width: 250px;
-  height: 270px;
-}
