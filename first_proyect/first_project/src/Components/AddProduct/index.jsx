@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import './style.css';
 class AddProduct extends Component {
   constructor(props) {
     super(props);
@@ -28,23 +29,23 @@ class AddProduct extends Component {
     return (
       <form onSubmit={this.handleForm.bind(this)}>
         <div className="form-group">
-          <label htmlFor="producto">Name: </label>
-          <input type="text" name="producto" onChange={this.handleInput} />
+          <label htmlFor="producto">Nombre del producto: </label>
+          <input type="text" name="producto" required onChange={this.handleInput} />
         </div>
 
         <div className="form-group">
-          <label htmlFor="img">Image: </label>
-          <input type="text" name="img" onChange={this.handleInput} />
+          <label htmlFor="img">Imagen: </label>
+          <input type="text" name="img" required onChange={this.handleInput} />
         </div>
 
         <div className="form-group">
           <label htmlFor="precio">Precio: </label>
-          <input type="text" name="precio" onChange={this.handleInput} />
+          <input type="text" name="precio" required onChange={this.handleInput} />
         </div>
 
         <div className="form-group">
-          <button>Enviar</button>
-          <button onClick={this.props.onCancel}>Cancelar</button>
+          <button className="send-button">Agregar</button>
+          <button className="cancel-button" onClick={this.props.onCancel}>Cancelar</button>
         </div>
       </form>
     );

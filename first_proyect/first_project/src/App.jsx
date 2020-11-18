@@ -9,7 +9,7 @@ function App() {
   return (
     <div className = "contenedor">
       <Header/>
-      <Store title ="Tienda saludable"/>
+      <Store/>
     </div>
   );
 }

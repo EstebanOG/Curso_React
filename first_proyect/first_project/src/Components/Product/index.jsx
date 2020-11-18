@@ -16,7 +16,6 @@ function Product({
             <button className="delete-button" onClick={onDelete}>
                 &times;
             </button>
-             <h4>{producto.toUpperCase()}</h4>
             <div>
                 <img src={img} alt="Product"/>
                 <h2>{producto}</h2>

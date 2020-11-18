@@ -18,9 +18,10 @@
 
 .delete-button {
   float: right;
-  background: hsl(0, 75%, 50%);
+  background: #cd3834;
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 50%;
+  width:30px; 
+  height:30px
 }

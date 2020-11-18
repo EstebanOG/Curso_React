@@ -5,10 +5,13 @@
   }
 
   .add-button {
-    padding: 10px;
-    background: hsl(120, 75%, 40%);
+    padding: 20px;
+    background-color: #78AB3A;
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
     cursor: pointer;
+    position: absolute;
+    top: 40px; 
+    left: 1100px;
   }

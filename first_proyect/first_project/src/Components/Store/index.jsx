@@ -50,12 +50,11 @@ class Store extends Component {
     }
   
     render() {
-      const { title } = this.props;
+      //const { title } = this.props;
       const { products, addNewProduct } = this.state;
   
       return (
         <>
-          <h1>Welcome to {title}</h1>
           {addNewProduct ? (
             <AddProduct
               onSubmit={this.hanldeAddP}
