@@ -32,3 +32,9 @@ Vamos al directorio donde se encuentra nuestro proyecto en este caso en la carpe
 ```
 ~$ npm start
 ```
+#### Sistema de rutas
+Para instalar utilizamos el siguiente comando:
+
+```
+~$  npm i react-router-dom
+```

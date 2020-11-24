@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes, { func } from 'prop-types';
 
+import { Link } from 'react-router-dom';
+
 import './style.css';
 
 function Product({
+    id,
     onDelete,
     img,
     producto,
@@ -15,6 +18,7 @@ function Product({
             <button className="delete-button" onClick={onDelete}>
                 &times;
             </button>
+            <Link to={'product/'+id}>Ver más detalles</Link>
             <div>
                 <img src={img} alt="Product"/>
                 <h2>{producto}</h2>
