@@ -1,3 +1,4 @@
+  
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
@@ -10,6 +11,10 @@ const config = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+    alias: {
+      Components: path.resolve(__dirname, './src/Components'),
+      Data: path.resolve(__dirname, './src/Data'),
+    },
   },
   module: {
     rules: [
@@ -23,6 +28,10 @@ const config = {
       {
         test: /\.(css)$/,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.s[a|c]ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(svg|png|jpe?g|gif)$/i,

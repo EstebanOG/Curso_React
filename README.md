@@ -38,3 +38,10 @@ Para instalar utilizamos el siguiente comando:
 ```
 ~$  npm i react-router-dom
 ```
+
+#### SCSS
+Para instalar utilizamos el siguiente comando:
+
+```
+~$  npm install node-sass
+```

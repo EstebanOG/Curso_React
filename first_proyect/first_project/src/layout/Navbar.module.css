@@ -1,12 +1,11 @@
+.navbar{
+    padding: 5px;
+}
 
 .navbar-list{
     padding: 0;
     list-style-type: none;
     display: flex;
-}
-
-.navbar-item{
-    
 }
 
 .navbar-item a{
