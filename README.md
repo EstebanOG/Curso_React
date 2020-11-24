@@ -45,3 +45,10 @@ Para instalar utilizamos el siguiente comando:
 ```
 ~$  npm install node-sass
 ```
+
+#### Styled-Components
+Para instalar utilizamos el siguiente comando:
+
+```
+~$  npm i styled-components
+```
