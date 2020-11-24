@@ -17,13 +17,13 @@ function Product({
         <article className = "card">
             <button className="delete-button" onClick={onDelete}>
                 &times;
-            </button>
-            <Link to={'product/'+id}>Ver más detalles</Link>
+            </button>  
             <div>
                 <img src={img} alt="Product"/>
                 <h2>{producto}</h2>
                 <h4>{precio}</h4>
             </div>
+            <Link to={'product/'+id}>Ver más detalles</Link>
         </article>
         
         

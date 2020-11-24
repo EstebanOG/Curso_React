@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 //@reach/router
 
 import './style.css';
@@ -17,25 +17,15 @@ function App() {
   return (
     
     <BrowserRouter>
-      <Header/>
-      <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-    </nav>
-    <Switch>
-      <Route exact path="/" component={Home}></Route>
-      <Route path="/about" component={About}></Route>
-      <Route path="/contact" component={Contact}></Route>
-    </Switch>
+      <Header />
+      <Layout>
+        <Switch>
+          <Route exact path="/" component={Home}></Route>
+          <Route path="/product/:id" component={Detail}></Route>
+          <Route path="/about" component={About}></Route>
+          <Route path="/contact" component={Contact}></Route>
+        </Switch>
+      </Layout>
     </BrowserRouter>
   );
 }

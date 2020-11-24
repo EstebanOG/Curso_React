@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Detail({ match }) {
-  const { id } = match.params;
+function Detail() {
+  
   return (
     <div>
-      <h3>Está es la vista de Detalle del producto {id}</h3>
+      <h3>Está es la vista de Detalle del producto</h3>
     </div>
   );
 }
