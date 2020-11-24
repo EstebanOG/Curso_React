@@ -1,0 +1,21 @@
+
+.navbar-list{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-item{
+    
+}
+
+.navbar-item a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-item a:hover{
+    background-color: #b9adad;
+}
