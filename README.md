@@ -52,3 +52,15 @@ Para instalar utilizamos el siguiente comando:
 ```
 ~$  npm i styled-components
 ```
+
+#### react-bootstrap
+Para instalar utilizamos el siguiente comando:
+
+```
+~$  npm install bootstrap
+~$  npm install react-bootstrap bootstrap
+```
+
+Pagina web 
+
+https://react-bootstrap.github.io/components/alerts

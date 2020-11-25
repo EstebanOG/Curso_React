@@ -2,8 +2,11 @@ import React from 'react';
 import PropTypes, { func } from 'prop-types';
 
 import { Link } from 'react-router-dom';
-
+import ButtonUI from '../../UI/Button';
 import './style.css';
+
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 function Product({
     id,
@@ -13,18 +16,19 @@ function Product({
     precio,
     }){
     return(
-        
-        <article className = "card">
-            <button className="delete-button" onClick={onDelete}>
+    <Card style={{ width: '18rem' }}>
+        <button className="delete-button" onClick={onDelete}>
                 &times;
-            </button>  
-            <div>
-                <img src={img} alt="Product"/>
-                <h2>{producto}</h2>
-                <h4>{precio}</h4>
-            </div>
-            <Link to={'product/'+id}>Ver más detalles</Link>
-        </article>
+        </button> 
+        <Card.Img variant="top" src={img} />
+        <Card.Body>
+            <Card.Title>{producto}</Card.Title>
+            <Card.Text>
+            {precio}
+            </Card.Text>
+            <Button variant="light"><Link to={'product/'+id}>Ver más detalles</Link></Button>
+        </Card.Body>
+    </Card>
         
         
     );
@@ -49,3 +53,17 @@ Product.propTypes = {
 };
 
 export default Product;
+
+/* <article className = "card">
+            <button className="delete-button" onClick={onDelete}>
+                &times;
+            </button>  
+            <div>
+                <img src={img} alt="Product"/>
+                <h2>{producto}</h2>
+                <h4>{precio}</h4>
+            </div>
+            <Button>
+                <Link to={'product/'+id}>Ver más detalles</Link>
+            </Button>
+        </article> */

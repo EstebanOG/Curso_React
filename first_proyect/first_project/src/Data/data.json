@@ -1,63 +1,70 @@
 {
-    "products": [{
-    "id":1,
-    "img": "../src/Images/Ajonjoli.jpg",
-    "producto":"AJONJOLÍ TOSTADO",
-    "precio": "$7.500 – $11.500"
-    },{
-    "id":2,
-    "img": "../src/Images/Alpiste_en_pepa.jpg",
-    "producto":"ALPISTE EN PEPA X 500GR",
-    "precio": "$8.000"
-    },{
-    "id":3,
-    "img": "../src/Images/Alpiste_molido.jpg",
-    "producto":"ALPISTE MOLIDO POR LIBRA",
-    "precio": "$12.000"
-    },{
-    "id":4,
-    "img": "../src/Images/Amaranto.jpg",
-    "producto":"AMARANTO EN PEPA – 250 GRAMOS",
-    "precio": "$8.000"
-    },{
-    "id":5,
-    "img": "../src/Images/Anis.jpg",
-    "producto":"ANÍS ESTRELLADO/PEPA – 30 GRAMOS",
-    "precio": "$5.000"
-    },{
-    "id":6,
-    "img": "../src/Images/Avena_hojuelas.jpg",
-    "producto":"AVENA EN HOJUELAS – 500 G",
-    "precio": "$4.500"
-    },{
-    "id":7,
-    "img": "../src/Images/Cafe_de_cerales.jpg",
-    "producto":"CAFÉ DE CEREALES – LIBRE DE CAFEÍNA",
-    "precio": "$11.000"
-    },{
-    "id":8,
-    "img": "../src/Images/Chocolate_de_cereales.jpg",
-    "producto":"CHOCOLATE DE CEREALES",
-    "precio": "$11.000"
-    },{
-    "id":9,
-    "img": "../src/Images/Germen_de_trigo.jpg",
-    "producto":"GERMEN DE TRIGO – 500 GRAMOS",
-    "precio": "$9.000"
-    },{
-    "id":10,
-    "img": "../src/Images/Granola_dulce.jpg",
-    "producto":"GRANOLA NATURAL",
-    "precio": "$10.000 – $20.000"
-    },{
-    "id":11,
-    "img": "../src/Images/Granola_sin_dulce.jpg",
-    "producto":"GRANOLA SIN DULCE",
-    "precio": "$10.000 – $18.000"
-    },{
-    "id":12,
-    "img": "../src/Images/Granola_artesanal.jpg",
-    "producto":"GRANOLA TRICEREAL – CANELA Y PIÑA",
-    "precio": "$10.000 – $20.000"
-    }]
+  "products": [
+    {
+      "id": 2,
+      "img": "../src/Images/Alpiste_en_pepa.jpg",
+      "producto": "ALPISTE EN PEPA X 500GR",
+      "precio": "$8.000"
+    },
+    {
+      "id": 3,
+      "img": "../src/Images/Alpiste_molido.jpg",
+      "producto": "ALPISTE MOLIDO POR LIBRA",
+      "precio": "$12.000"
+    },
+    {
+      "id": 4,
+      "img": "../src/Images/Amaranto.jpg",
+      "producto": "AMARANTO EN PEPA – 250 GRAMOS",
+      "precio": "$8.000"
+    },
+    {
+      "id": 5,
+      "img": "../src/Images/Anis.jpg",
+      "producto": "ANÍS ESTRELLADO/PEPA – 30 GRAMOS",
+      "precio": "$5.000"
+    },
+    {
+      "id": 6,
+      "img": "../src/Images/Avena_hojuelas.jpg",
+      "producto": "AVENA EN HOJUELAS – 500 G",
+      "precio": "$4.500"
+    },
+    {
+      "id": 7,
+      "img": "../src/Images/Cafe_de_cerales.jpg",
+      "producto": "CAFÉ DE CEREALES – LIBRE DE CAFEÍNA",
+      "precio": "$11.000"
+    },
+    {
+      "id": 8,
+      "img": "../src/Images/Chocolate_de_cereales.jpg",
+      "producto": "CHOCOLATE DE CEREALES",
+      "precio": "$11.000"
+    },
+    {
+      "id": 9,
+      "img": "../src/Images/Germen_de_trigo.jpg",
+      "producto": "GERMEN DE TRIGO – 500 GRAMOS",
+      "precio": "$9.000"
+    },
+    {
+      "id": 10,
+      "img": "../src/Images/Granola_dulce.jpg",
+      "producto": "GRANOLA NATURAL",
+      "precio": "$10.000 – $20.000"
+    },
+    {
+      "id": 11,
+      "img": "../src/Images/Granola_sin_dulce.jpg",
+      "producto": "GRANOLA SIN DULCE",
+      "precio": "$10.000 – $18.000"
+    },
+    {
+      "id": 12,
+      "img": "../src/Images/Granola_artesanal.jpg",
+      "producto": "GRANOLA TRICEREAL – CANELA Y PIÑA",
+      "precio": "$10.000 – $20.000"
+    }
+  ]
 }

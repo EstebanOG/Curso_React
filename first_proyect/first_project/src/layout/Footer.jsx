@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+
+import Button from '../UI/Button';
 //css-in-js
 
 const FooterS = styled.footer`
@@ -9,13 +11,6 @@ const FooterS = styled.footer`
   text-align: center;
 `;
 
-const Button = styled.button`
-  background-color: #f34;
-  color: white;
-  padding: 15px;
-  border:none;
-  border-radius: 15px;
-`;
 function Footer() {
   return<FooterS>
     <p>copyright © 2020</p>

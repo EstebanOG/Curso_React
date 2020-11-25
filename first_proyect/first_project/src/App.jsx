@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 //@reach/router
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 
 import Layout from './layout/Default';
@@ -13,11 +13,12 @@ import Detail from './pages/Detail';
 
 import Header from './Components/Header/index';
 
+
+
 function App() {
   return (
     
     <BrowserRouter>
-      <Header />
       <Layout>
         <Switch>
           <Route exact path="/" component={Home}></Route>
